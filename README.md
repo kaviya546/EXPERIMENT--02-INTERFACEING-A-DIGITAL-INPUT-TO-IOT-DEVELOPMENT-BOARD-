@@ -1,8 +1,8 @@
-###  DATE: 
+###  DATE: 24/08/2024
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: KAVIYA SNEKA M
+###  ROLL NO :212223040091
+###  DEPARTMENT: CSE
 
 
 # EXPERIMENT--02-INTERFACING-A-DIGITAL-INPUT-TO-IOT-DEVELOPMENT-BOARD-
@@ -77,10 +77,28 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
 
 
 ## STM 32 CUBE PROGRAM :
-
+````
+while (1)
+  {
+   if(IRstatus==1)
+   {
+	   HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);
+	HAL Delay(1000);
+	   HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_SET);
+	HAL Delay(1000);
+   }
+   else
+   {
+	   HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);
+	HAL Delay(1000);
+   }
+  }
+````
 
 
 ## Output  :
+![image](https://github.com/user-attachments/assets/26ff648d-b499-4bd4-a16a-c7229b2f4b28)
+
  
  
  
